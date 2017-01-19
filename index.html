@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChangeCalculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id="mainHeading">Change Calculator</h1>
+    <div id="mainContent">
+        <div class="form-group">
+            <label id="totalLabel" class="col-md-4 control-label" for="textinput">How much is due for the sale?</label>
+            <div class="col-md-4">
+                <input id="saleTotalInput" name="textinput" type="text" placeholder="sale total" class="form-control input-md" step="any">
+            </div>
+        </div>
+        <div class="form-group">
+            <label id="paidLabel" class="col-md-4 control-label" for="textinput">How much has the customer given you?</label>
+            <div class="col-md-4">
+                <input id="customerCashInput" name="textinput" type="number" placeholder="paid amount" class="form-control input-md" step="any">
+            </div>
+            <div class="form-group" id="calculateButton">
+                <label id="buttonLabel" class="col-md-4 control-label" for="singlebutton"> Get Change</label>
+                <div class="col-md-4">
+                    <button id="calcButton" name="singlebutton" class="btn btn-primary">Calculate</button>
+                </div>
+            </div>
+        </div>
+        <div id="totalChangeDiv">
+            <label id="totalLabel">Change Due:</label>
+            <p id="totalChangeP"></p>
+        </div>
+        <div id="totalChangeDiv">
+            <div id="penniesDiv">
+                <label id="penniesLabel">Pennies</label>
+                <p id="pennies"></p>
+            </div>
+            <div id="nickelsDiv">
+                <label id="nickelsLabel">Nickels</label>
+                <p id="nickels"></p>
+            </div>
+            <div id="dimesDiv">
+                <label id="dimesLabel">Dimes</label>
+                <p id="dimes"></p>
+            </div>
+            <div id="quartersDiv">
+                <label id="quartersLabel">Quarters</label>
+                <p id="quarters"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous">
+    </script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="index_2.js"></script>
+</body>
+
+</html>
